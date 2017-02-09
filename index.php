@@ -14,8 +14,10 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom CSS -->
 		<link href="css/style.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Slabo+27px" rel="stylesheet">
-
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -37,7 +39,7 @@
 
 		<div class="row featurette">
 			<div class="col-md-3">
-				<img class="img-responsive" src="images/174c771.png" alt="Victor Adams">
+				<img class="img-responsive" src="images/victor.jpg" alt="Victor Adams">
 			</div>
 			<div class="col-md-9">
 				<h2>Victor Adams</h2>
@@ -49,12 +51,12 @@
 			<div class="clear"></div>
 			<div class="col-md-12">
 				<h2 class="quote">Quote</h2>
-				<h4><?php $file= "quotes.txt";
+				<p class="quote"><?php $file= "quotes.txt";
 					$quotes = file($file);
 					srand((double)microtime()*1000000);
 					$randomquote = rand(0, count($quotes)-1);
 					echo $quotes[$randomquote];
-				?></h4>
+				?></p>
 			</div>
 		</div>
 	</div><!-- /.container -->
